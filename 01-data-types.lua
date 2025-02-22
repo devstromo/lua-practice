@@ -10,7 +10,7 @@ print(True)
 First_Name = 'John'
 print(First_Name)
 local age = 25
-
+age = age + 3
 -- Concatenation
 print(First_Name .. " is " .. age .. " years old.")
 

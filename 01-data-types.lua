@@ -19,3 +19,6 @@ print(tostring(age))
 
 FullName = First_Name .. " Doe" .. " Jr."
 print(FullName)
+
+-- String length
+print(#FullName)

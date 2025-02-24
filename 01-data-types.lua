@@ -29,5 +29,5 @@ local multi_line = [[
 This is a multi-line string
     It can be used to write long strings
     without having to use the escape character
-]] .. FullName .. "."
+]] .. FullName .. "." ..[[ Age is ]] .. age
 print(multi_line)

@@ -20,3 +20,16 @@ end
 
 local table_type = type(person)
 print(table_type)
+
+local foods = {
+    "Rice",
+    nil,
+    "Yam",
+    "Plantain"
+}
+
+-- Accessing table elements
+print("First food: " .. foods[1])
+print( foods[2])
+print("Third food: " .. foods[3])
+print("Fourth food: " .. foods[4])

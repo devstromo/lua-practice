@@ -1,0 +1,22 @@
+-- Define a simple Lua table
+local person = {
+    name = "John Doe",
+    age = 30,
+    occupation = "Software Developer"
+}
+
+-- Accessing table elements
+print("Name: " .. person.name)
+print("Age: " .. person.age)
+print("Occupation: " .. person.occupation)
+
+-- Adding a new key-value pair
+person.country = "USA"
+
+-- Iterating over table elements
+for key, value in pairs(person) do
+    print(key .. ": " .. tostring(value))
+end
+
+local table_type = type(person)
+print(table_type)

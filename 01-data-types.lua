@@ -17,5 +17,5 @@ print(First_Name .. " is " .. age .. " years old.")
 -- to string
 print(tostring(age))
 
-FullName = "John" .. " Doe" .. " Jr."
+FullName = First_Name .. " Doe" .. " Jr."
 print(FullName)

@@ -21,6 +21,8 @@ end
 local table_type = type(person)
 print(table_type)
 
+print(#person)
+
 local foods = {
     "Rice",
     nil,
@@ -33,3 +35,7 @@ print("First food: " .. foods[1])
 print( foods[2])
 print("Third food: " .. foods[3])
 print("Fourth food: " .. foods[4])
+
+local food = foods[4]
+print(#food)
+print(#foods)

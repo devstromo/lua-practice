@@ -22,3 +22,12 @@ print(FullName)
 
 -- String length
 print(#FullName)
+
+-- Multi-line strings
+
+local multi_line = [[
+This is a multi-line string
+    It can be used to write long strings
+    without having to use the escape character
+]]
+print(multi_line)

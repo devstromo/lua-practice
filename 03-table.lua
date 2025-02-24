@@ -39,3 +39,30 @@ print("Fourth food: " .. foods[4])
 local food = foods[4]
 print(#food)
 print(#foods)
+
+-- Define a list of person objects
+local people = {
+    {
+        name = "Alice Smith",
+        age = 28,
+        occupation = "Data Scientist"
+    },
+    {
+        name = "Bob Johnson",
+        age = 35,
+        occupation = "Web Developer"
+    },
+    {
+        name = "Carol Williams",
+        age = 42,
+        occupation = "Project Manager"
+    }
+}
+
+-- Iterating over the list of persons
+for i, person in ipairs(people) do
+    print("Person " .. i .. ":")
+    print("  Name: " .. person.name)
+    print("  Age: " .. person.age)
+    print("  Occupation: " .. person.occupation)
+end

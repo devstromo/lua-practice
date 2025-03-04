@@ -100,3 +100,23 @@ local function PrintMessage(message)
 end
 
 PrintMessage("Hello, World!") -- Hello, World!
+
+-- Functions as first-class citizens
+local function Add(a, b)
+    return a + b
+end
+
+local function Subtract(a, b)
+    return a - b
+end
+
+local function Calculate(a, b, operation)
+    return operation(a, b)
+end
+
+local sum = Calculate(10, 20, Add)
+print(sum) -- 30
+
+local difference = Calculate(10, 20, Subtract)
+
+print(difference) -- -10

@@ -92,3 +92,11 @@ function PrintFullName()
 end
 
 PrintFullName() -- John Doe
+
+
+-- Anonymous functions
+local function PrintMessage(message)
+    print(message)
+end
+
+PrintMessage("Hello, World!") -- Hello, World!

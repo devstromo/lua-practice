@@ -13,8 +13,16 @@ print(FullName) -- John Doe
 -- Functions
 -- do_sth() -- error
 
-function do_sth()
+function Do_sth() -- Global
     print(FullName .. " is a good person.")
 end
 
-do_sth() -- John Doe
+Do_sth() -- John Doe
+
+-- Function with parameters
+function Add(a, b)
+    return a + b
+end
+
+local sum = Add(10, 20)
+print(sum) -- 30

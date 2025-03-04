@@ -7,7 +7,7 @@ do
 end
 print(first_name) -- nil
 -- The variable first_name is local to the block, so it is not accessible outside the block.
-print(FullName) -- John Doe
+print(FullName)   -- John Doe
 -- The variable FullName is global, so it is accessible outside the block.
 
 -- Functions
@@ -80,3 +80,15 @@ end
 PrintPerson { name = "John", age = 30 }
 PrintPerson { age = 25, name = "Jane" }
 
+-- Functions called other functions
+
+function GetAge()
+    print("Your age is 30")
+end
+
+function PrintFullName()
+    print(FullName)
+    GetAge()
+end
+
+PrintFullName() -- John Doe

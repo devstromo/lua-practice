@@ -123,6 +123,12 @@ end
 
 PrintMessage("Hello, World!") -- Hello, World!
 
+PrintMessageFunc = function (message)
+    print(message)
+end
+
+PrintMessageFunc("Hello, World!") -- Hello, World!
+
 -- Functions as first-class citizens
 local function Add(a, b)
     return a + b

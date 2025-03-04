@@ -93,6 +93,16 @@ end
 
 PrintFullName() -- John Doe
 
+-- Nested functions
+function OuterFunction()
+    print("OuterFunction")
+    function InnerFunction()
+        print("InnerFunction")
+    end
+    InnerFunction()
+end
+
+OuterFunction() -- OuterFunction, InnerFunction
 
 -- Anonymous functions
 local function PrintMessage(message)

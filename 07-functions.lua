@@ -44,3 +44,26 @@ end
 
 local product = Multiply(10)
 print(product) -- 20
+
+-- Function with variable number of arguments
+function Sum(...)
+    local sum = 0
+    for i, v in ipairs { ... } do
+        sum = sum + v
+    end
+    return sum
+end
+
+local total = Sum(10, 20, 30, 40, 50)
+print(total) -- 150
+
+-- Function with named arguments
+function PrintPerson(person)
+    print("Name: " .. person.name)
+    print("Age: " .. person.age)
+    print "----------------"
+end
+
+PrintPerson { name = "John", age = 30 }
+PrintPerson { age = 25, name = "Jane" }
+

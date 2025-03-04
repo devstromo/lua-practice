@@ -26,3 +26,12 @@ end
 
 local sum = Add(10, 20)
 print(sum) -- 30
+
+-- Function with multiple return values
+function Swap(a, b)
+    return b, a
+end
+
+local x, y = Swap(10, 20)
+
+print(x, y) -- 20 10

@@ -35,3 +35,12 @@ end
 local x, y = Swap(10, 20)
 
 print(x, y) -- 20 10
+
+-- Function with default parameters
+function Multiply(a, b)
+    b = b or 2
+    return a * b
+end
+
+local product = Multiply(10)
+print(product) -- 20

@@ -148,3 +148,14 @@ print(sum) -- 30
 local difference = Calculate(10, 20, Subtract)
 
 print(difference) -- -10
+
+-- Functions as return values
+function CreateAdder(a)
+    return function (b)
+        return a + b
+    end
+end
+
+local add5 = CreateAdder(5)
+local sum = add5(10)
+print(sum) -- 15

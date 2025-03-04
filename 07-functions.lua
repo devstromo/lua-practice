@@ -103,6 +103,18 @@ function OuterFunction()
 end
 
 OuterFunction() -- OuterFunction, InnerFunction
+InnerFunction()
+
+function OuterNestedFunction()
+    print("OuterNestedFunction")
+    local function InnerNestedFunction()
+        print("InnerNestedFunction")
+    end
+    InnerNestedFunction()
+end
+
+OuterNestedFunction() -- OuterFunction, InnerFunction
+-- InnerNestedFunction() -- error
 
 -- Anonymous functions
 local function PrintMessage(message)

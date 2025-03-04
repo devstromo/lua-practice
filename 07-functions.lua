@@ -67,3 +67,16 @@ end
 PrintPerson { name = "John", age = 30 }
 PrintPerson { age = 25, name = "Jane" }
 
+-- Function with variable number of named arguments
+function PrintPerson(...)
+    local args = { ... }
+    for i, person in ipairs(args) do
+        print("Name: " .. person.name)
+        print("Age: " .. person.age)
+        print "----------------"
+    end
+end
+
+PrintPerson { name = "John", age = 30 }
+PrintPerson { age = 25, name = "Jane" }
+

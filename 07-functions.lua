@@ -9,6 +9,10 @@ print(first_name) -- nil
 -- The variable first_name is local to the block, so it is not accessible outside the block.
 print(FullName) -- John Doe
 -- The variable FullName is global, so it is accessible outside the block.
+
+-- Functions
+-- do_sth() -- error
+
 function do_sth()
     print(FullName .. " is a good person.")
 end

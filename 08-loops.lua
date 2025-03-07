@@ -15,3 +15,8 @@ for i = 1, 10 do
 end
 
 Print("John", "Doe", "Sally", "Smith", "Jane", "Doe")
+
+-- for loop with step
+for i = 1, 10, 2 do
+    Print(i)
+end

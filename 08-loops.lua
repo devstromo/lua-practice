@@ -34,3 +34,10 @@ while i <= 10 do
     i = i + 1
 end
 
+-- repeat until loop
+print("Repeat until loop")
+i = 1
+repeat
+    Print(i)
+    i = i + 1
+until i > 10

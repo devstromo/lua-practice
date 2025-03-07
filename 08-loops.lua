@@ -50,3 +50,13 @@ for i = 1, 10 do
     end
     Print(i)
 end
+
+-- continue
+print("Continue")
+for i = 1, 10 do
+    if i == 5 then
+        goto continue
+    end
+    Print(i)
+    ::continue::
+end

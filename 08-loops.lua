@@ -25,3 +25,12 @@ end
 for i = 10, 1, -1 do
     Print(i)
 end
+
+-- while loop
+print("While loop")
+local i = 1
+while i <= 10 do
+    Print(i)
+    i = i + 1
+end
+

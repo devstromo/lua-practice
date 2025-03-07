@@ -18,3 +18,10 @@ elseif 1 < 2 then
 else
     print("1 is not greater than 2 and 1 is not less than 2")
 end
+
+-- ternary operator
+print("Ternary operator")
+local a = 1
+local b = 2
+local max = a > b and a or b
+print(max)

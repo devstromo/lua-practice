@@ -1,6 +1,6 @@
 function Print(...)
     local args = { ... }
-    for i, v in args do
+    for i, v in pairs(args) do
         io.write(v)
         if i < #args then
             io.write("\t")

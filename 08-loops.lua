@@ -41,3 +41,12 @@ repeat
     Print(i)
     i = i + 1
 until i > 10
+
+-- break
+print("Break")
+for i = 1, 10 do
+    if i == 5 then
+        break
+    end
+    Print(i)
+end

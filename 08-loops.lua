@@ -60,3 +60,11 @@ for i = 1, 10 do
     Print(i)
     ::continue::
 end
+
+-- nested loops
+print("Nested loops")
+for i = 1, 3 do
+    for j = 1, 3 do
+        Print(i, j)
+    end
+end

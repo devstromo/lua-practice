@@ -68,3 +68,17 @@ for i = 1, 3 do
         Print(i, j)
     end
 end
+
+-- loop labels
+print("Loop labels")
+for i = 1, 3 do
+    for j = 1, 3 do
+        Print(i, j)
+        if i == 2 and j == 2 then
+            goto done
+        end
+    end
+end
+
+::done::
+print("Done")

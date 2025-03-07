@@ -20,3 +20,8 @@ Print("John", "Doe", "Sally", "Smith", "Jane", "Doe")
 for i = 1, 10, 2 do
     Print(i)
 end
+
+-- for loop with negative step
+for i = 10, 1, -1 do
+    Print(i)
+end

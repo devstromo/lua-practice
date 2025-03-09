@@ -17,3 +17,17 @@ print("\nAfter sorting")
 for _, item in pairs(t_names) do
     print(item)
 end
+
+
+print("\nAge sorting")
+local t_ages = {
+    30,
+    25,
+    28,
+    35,
+    42
+}
+table.sort(t_ages)
+for _, item in pairs(t_ages) do
+    print(item)
+end

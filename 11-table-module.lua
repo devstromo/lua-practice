@@ -35,3 +35,14 @@ table.sort(t_ages)
 for _, item in pairs(t_ages) do
     print(item)
 end
+
+-- Remove
+print("\nBefore removing")
+for _, item in pairs(t_names) do
+    print(item)
+end
+
+table.remove(t_names)
+
+print("\nAfter removing")
+print(table.concat(t_names, ", "))

@@ -6,3 +6,6 @@ if result then
 else
     print("Error removing file: " .. err)
 end
+
+-- os.execute("ls -l")
+-- os.execute("rm files/*.a")

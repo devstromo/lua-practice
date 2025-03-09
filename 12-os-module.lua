@@ -12,3 +12,7 @@ end
 
 -- local first = os.getenv("FIRST_NAME")
 -- print("First name: " .. first)
+
+-- Time
+local time = os.time()
+print("Time: " .. time)

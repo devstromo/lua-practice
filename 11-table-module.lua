@@ -18,6 +18,10 @@ for _, item in pairs(t_names) do
     print(item)
 end
 
+print("\nConcatenation")
+print(table.concat(t_names, ", "))
+print("\nConcatenation in range")
+print(table.concat(t_names, ", ", 2, 4))
 
 print("\nAge sorting")
 local t_ages = {

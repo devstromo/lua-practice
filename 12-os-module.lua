@@ -9,3 +9,6 @@ end
 
 -- os.execute("ls -l")
 -- os.execute("rm files/*.a")
+
+-- local first = os.getenv("FIRST_NAME")
+-- print("First name: " .. first)
